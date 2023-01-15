@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>エコスクールプロジェクト 結果発表特別サイト</title>
+</head>
+<body>
+<div class="header">
+ <div class="header-logo">エコスクールプロジェクト  <span>結果発表特別サイト</span></div>
+</div>
+
+<div class="main">
+
+<div class="copy-container">
+ <div class="main-text">
+  <h1>エコスクールプロジェクト２０２２結果発表!!!</h1>
+  <h2>ー　学期をまたいでいよいよ結果発表です　ー</h2>
+ </div>
+ <div class="cap-picture">
+  <img src="発表画像.jpg">
+ </div>
+</div>
+
+<div class="content">
+<p>
+保健委員長のこの私、実は趣味でプログラミングの勉強をしていまして、その練習もかねてエコスクールプロジェクトのキャップ・リングプル回収結果発表ページを作りました！初めて作るのでわかりにくいところがあるかもしれないですがぜひご覧ください！　　　　　　　　　　　　　　　<span>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span></p></div>
+
+<div class="button-for-result">
+ <a href="#down"><h1>結果発表へ</h1></a>
+  <img src="ボタン.png">
+</div>
+
+<script>
+const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
+  for (let i = 0; i < smoothScrollTrigger.length; i++){
+    smoothScrollTrigger[i].addEventListener('click', (e) => {
+      e.preventDefault();
+      let href = smoothScrollTrigger[i].getAttribute('href');
+       let targetElement = document.getElementById(href.replace('#', ''));
+      const rect = targetElement.getBoundingClientRect().top;
+      const offset = window.pageYOffset;
+      const gap = -1150;
+      const target = rect + offset - gap;
+      window.scrollTo({
+        top: target,
+        behavior: 'smooth',
+      });
+    });
+  }
+</script>
+
+<section id="down" class="result">
+ <h3>― 結果発表 ―</h3>
+</section>
+
+<div class="information">
+
+<div class="main-result">
+<h5>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</h5>
+<h4>キャップ・リングプルの合計回収量はなんと・・・</h4>
+<div>131.7Kg<span> 　です！</span></div>
+<p>今年は去年の回収量である110Kgと比べて20Kgも多く集まりました！ちなみに130Kgというのはだいたいジャイアントパンダ一頭分くらいの大きさらしいです。そう考えるとたった一か月近くでとんでもない量のキャップとリングプルが集まりましたね！</p>
+</div>
+
+<div class="panda">
+<p>↓話題にパンダが出てきたのでとりあえずパンダの画像を載せときます!🐼</p>
+<ul>
+ <li><img src="パンダ画像１.jpg"></li>
+ <li><img src="パンダ画像２.jpg"></li>
+ <li><img src="パンダ画像３.jpg"></li>
+</ul>
+<a>かわいい♡</a>
+</div>
+
+<div class="sub-result">
+<p>さて、気を取り直して</p>
+<h1>次に最も回収に貢献してくれたクラスを発表します！</h1>
+<p>最も貢献してくれたクラスはキャップとリングプル合わせて35.7Kgも集まった・・・</p>
+<h2><span>１年５組</span>です！おめでとうございます!</h2>
+<p>それでは、全クラスの回収量を表やグラフにしてみたのでご覧ください　　　　　　　　　　　　　（もしかしたら数値が間違っているかもしれません、ごめんなさい）</p>
+<img src="表.jpg">
+<p>あなたのクラスはどうでしたか？２番目に集まったのは２年３組で12.4Kg、３番目が３年４組の11Kgとなりました！ちなみにグラフにすると、こうなりました！</p>
+</div>
+
+<div class="graph">
+<img src="棒グラフ.jpg">
+<p>こうしてみると１年５組がぶっちぎりで集まりましたね（笑）お見事です！　　　　　　　　　　　　最後に学年別の回収割合も発表します！</P>
+</div>
+
+<div class="graph2">
+<img src="円グラフ.jpg">
+<p>やはり1年生の回収割合がとても多くなりました！リングプルは２年生が一番多く集められましたね！</p>
+<div>今年のエコスクールプロジェクトは去年よりも多くのキャップとリングプルを集めることができてよかったと思います。来年もエコスクールプロジェクトがあると思うので、そのときに向けてまた集めるようにしてください。ご協力ありがとうございました！</div>
+</div>
+
+</div>
+
+
+</div>
+
+<div class="footer">
+<h1>エコスクールプロジェクト 結果発表特別サイト</h1>
+<p>( ´Д｀)=3 ﾌｩ　作るの疲れた～</p>
+</div>
+
+</body>
+</html>
+
+
+
+<style>
+body{ font-family: "Avenir Next";
+width: 1380px;
+}
+
+li{
+list-style: none;
+float: left;
+padding: 33px 20px;
+}
+
+.header{
+background-color: #26d0c9;
+color: #fff;
+height: 90px;
+width: 1500px;
+}
+
+.header-logo{
+float: left;
+padding: 26px 20px;
+font-size: 30px;
+}
+
+.header span{
+font-size: 26px;
+}
+
+.main{
+height: 7600px;
+padding: 30px 0px 0px 0px;
+}
+
+.copy-coptainer{
+padding: 40px 80px;
+}
+
+.main-text{
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.main-text h1{
+font-size: 70px;
+width: 1150px;
+padding: 150px 0px 0px 140px;
+color: #97cdf3;
+}
+
+.main-text h2{
+text-align: center;
+font-size: 40px;
+padding: 30px 0px 0px 250px;
+}
+
+.cap-picture img{
+padding: 0px 60px 0px 60px;
+width: 100%;
+}
+
+.content{
+padding: 40px 80px;
+padding: 0px 80px;
+}
+
+.content p{
+text-align: left;
+padding: 70px 0px 0px 100px;
+font-size: 34px;
+width: 1150px;
+}
+
+.content span{
+font-weight: bold;
+}
+
+.button-for-result {
+padding: 40px 80px;
+}
+
+.button-for-result h1{
+padding: 140px 0px 0px 520px;
+font-size: 60px;
+position: absolute;
+color: red;
+}
+
+.button-for-result img{
+width: 30%;
+padding: 150px 0px 0px 485px;
+}
+
+.result{
+padding: 1500px 0px 0px 440px;
+}
+
+.result h3{
+position: absolute;
+font-size: 100px;
+}
+
+.information{
+background-color: #dddddd;
+width: 1500px;
+height: 5200px;
+}
+
+.main-result h5{
+position: absolute;
+font-size: 50px;
+font-weight: bold;
+padding: 630px 0px 0px 50px;
+}
+
+.main-result h4{
+font-size: 45px;
+padding: 330px 0px 0px 60px;
+}
+
+.main-result div{
+font-weight: bold;
+font-size: 150px;
+padding: 30px 0px 0px 420px;
+color: red;
+}
+
+.main-result span{
+font-size: 60px;
+color: black;
+}
+
+.main-result p{
+padding: 60px 0px 0px 90px;
+font-size: 40px;
+width: 1300px;
+float: center;
+}
+
+.panda p{
+padding: 0px 90px;
+font-size: 25px;
+}
+
+.panda li{
+display: flex;
+float: left;
+padding: 0px 60px;
+}
+
+.panda a{
+padding: 0px 0px 0px 1300px;
+}
+
+.sub-result{
+padding: 120px 60px 0px;
+}
+
+.sub-result p{
+font-size: 30px;
+}
+
+.sub-result h1{
+font-size: 50px;
+text-decoration: underline;
+text-decoration-color: red;
+}
+
+.sub-result h2{
+font-size: 50px;
+padding: 280px 120px 50px;
+}
+
+.sub-result span{
+font-size: 100px;
+color: red;
+}
+
+.sub-result img{
+padding: 30px 350px;
+}
+
+.graph{
+padding: 30px 60px 0px;
+}
+
+.graph img{
+padding: 0px 40px;
+}
+
+.graph p{
+font-size: 30px;
+}
+
+.graph2 {
+padding: 30px 60px 0px;
+}
+
+.graph2 img{
+padding: 0px 250px;
+}
+
+.graph2 p{
+font-size: 30px
+}
+
+.graph2 div{
+font-size: 40px;
+padding: 50px 0px 0px;
+}
+
+.footer{
+background-color: #888888;
+width: 1500px;
+height: 300px;
+}
+
+.footer h1{
+font-size: 50px;
+padding: 110px 30px 0px;
+}
+
+.footer p{
+color: #7c7889;
+padding: 0px 0px 0px 800px;
+font-size: 45px;
+}
+
+</style>
