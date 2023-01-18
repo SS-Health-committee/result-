@@ -23,31 +23,14 @@
 
 <div class="content">
 <p>
-保健委員長のこの私、実は趣味でプログラミングの勉強をしていまして、その練習もかねてエコスクールプロジェクトのキャップ・リングプル回収結果発表ページを作りました！初めて作るのでわかりにくいところがあるかもしれないですがぜひご覧ください！　　　　　　　　　　　　　　　<span>＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span></p></div>
-
-<div class="button-for-result">
- <a href="#down"><h1>結果発表へ</h1></a>
-  <img src="ボタン.png">
+保健委員長のこの私、実は趣味でhtml・cssの勉強をしていまして、その練習もかねてエコスクールプロジェクトのキャップ・リングプル回収結果発表ページを作りました！初めて作るのでわかりにくいところがあるかもしれないですがぜひご覧ください！</p>
+<h1>　＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</h1>
 </div>
 
-<script>
-const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
-  for (let i = 0; i < smoothScrollTrigger.length; i++){
-    smoothScrollTrigger[i].addEventListener('click', (e) => {
-      e.preventDefault();
-      let href = smoothScrollTrigger[i].getAttribute('href');
-       let targetElement = document.getElementById(href.replace('#', ''));
-      const rect = targetElement.getBoundingClientRect().top;
-      const offset = window.pageYOffset;
-      const gap = -1150;
-      const target = rect + offset - gap;
-      window.scrollTo({
-        top: target,
-        behavior: 'smooth',
-      });
-    });
-  }
-</script>
+<div class="button-for-result">
+ <h1>↓下へスクロール！</h1>
+</div>
+
 
 <section id="down" class="result">
  <h3>― 結果発表 ―</h3>
@@ -112,11 +95,6 @@ body{ font-family: "Avenir Next";
 width: 1380px;
 }
 
-li{
-list-style: none;
-float: left;
-padding: 33px 20px;
-}
 
 .header{
 background-color: #26d0c9;
@@ -136,7 +114,7 @@ font-size: 26px;
 }
 
 .main{
-height: 7600px;
+height: 7200px;
 padding: 30px 0px 0px 0px;
 }
 
@@ -175,29 +153,26 @@ padding: 0px 80px;
 
 .content p{
 text-align: left;
-padding: 70px 0px 0px 100px;
+padding: 90px 0px 0px 100px;
 font-size: 34px;
 width: 1150px;
 }
 
-.content span{
-font-weight: bold;
+.content h1{
+font-size: 34px;
+padding: 0px 0px 0px 80px;
 }
 
 .button-for-result {
-padding: 40px 80px;
+padding: 40px 50px;
 }
 
 .button-for-result h1{
-padding: 140px 0px 0px 520px;
+padding: 140px 0px 0px 450px;
 font-size: 60px;
 position: absolute;
 color: red;
-}
-
-.button-for-result img{
-width: 30%;
-padding: 150px 0px 0px 485px;
+width: 1500px;
 }
 
 .result{
@@ -207,19 +182,21 @@ padding: 1500px 0px 0px 440px;
 .result h3{
 position: absolute;
 font-size: 100px;
+width: 1500px;
 }
 
 .information{
 background-color: #dddddd;
 width: 1500px;
-height: 5200px;
+height: 4850px;
 }
 
 .main-result h5{
 position: absolute;
 font-size: 50px;
 font-weight: bold;
-padding: 630px 0px 0px 50px;
+padding: 580px 0px 0px 50px;
+width: 1500px;
 }
 
 .main-result h4{
@@ -327,7 +304,7 @@ padding: 110px 30px 0px;
 
 .footer p{
 color: #7c7889;
-padding: 0px 0px 0px 800px;
+padding: 0px 0px 0px 900px;
 font-size: 45px;
 }
 
